@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>week 9</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="boxes">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+            <div class="box6"></div>
+            <div class="box7"></div>
+            <div class="box8"></div>
+            <div class="box9"></div>
+        </div>
+
+        <script>
+            let element1 = document.querySelector('.box1');
+            let element2 = document.querySelector('.box2');
+            let element3 = document.querySelector('.box3');
+            let element4 = document.querySelector('.box4');
+            let element5 = document.querySelector('.box5');
+            let element6 = document.querySelector('.box6');
+            let element7 = document.querySelector('.box7');
+            let element8 = document.querySelector('.box8');
+            let element9 = document.querySelector('.box9');
+
+            function colorChange() {
+                let roll = Math.random() < 0.5 ? '#FFEBF7' : '#E1FAF8';
+                //from the sometimes blue, sometimes red website
+                element1.style.backgroundColor = roll;
+                element3.style.backgroundColor = roll;
+                element5.style.backgroundColor = roll;
+                element7.style.backgroundColor = roll;
+                element9.style.backgroundColor = roll;
+            }
+
+            setInterval(colorChange, 1000);
+
+            function colorChange2() {
+                let roll2 = Math.random() < 0.5 ? '#FFEBF7' : '#E1FAF8';
+                element2.style.backgroundColor = roll2;
+                element4.style.backgroundColor = roll2;
+                element6.style.backgroundColor = roll2;
+                element8.style.backgroundColor = roll2;
+            }
+
+            setInterval(colorChange2, 800);
+        </script>
+    </body>
+</html>
